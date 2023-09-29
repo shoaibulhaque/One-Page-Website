@@ -539,6 +539,7 @@ footer a:hover {
   /* Mobile brands section */
 
   .brands-section {
+    width: 100%;
     margin-top: 0;
     border-radius: 0;
     padding: 32px 0;
@@ -591,7 +592,7 @@ footer a:hover {
   }
 
   .hero-container .BG-shape {
-    bottom: 0px;
+    bottom: 0;
   }
 
   /* Our projects mobile section */
