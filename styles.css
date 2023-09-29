@@ -25,6 +25,21 @@ body {
   padding: 0 100px;
 }
 
+p {
+  line-height: 2;
+  margin-bottom: 20px;
+  width: 571px;
+  font-size: 16px;
+}
+
+section {
+  padding-top: 100px;
+}
+
+section p {
+  color: var(--light-color);
+}
+
 /* Header navigation */
 
 .desktop-nav {
@@ -250,7 +265,8 @@ a.btn.light-color {
   align-items: center;
 }
 
-.brands-section h2 {
+.brands-section h2,
+section h2 {
   font-size: 32px;
   font-family: "Montserrat",sans-serif;
   margin-bottom: 48px;
@@ -259,7 +275,8 @@ a.btn.light-color {
   position: relative;
 }
 
-.brands-section h2::after {
+.brands-section h2::after, 
+section h2::after {
   position: absolute;
   content: "";
   height: 3px;
@@ -267,5 +284,86 @@ a.btn.light-color {
   background-color: var(--blue-color);
   transform: translateX(-43px);
   bottom: -2px;
-  
+
+}
+
+
+section h2 {
+  color: var(--light-color);
+}
+
+/* About Us */ 
+
+.about .section-content {
+  display: flex;
+  align-items: center;
+}
+
+.about .section-content img {
+  margin-left: 100px;
+}
+
+/* Projects section */
+
+.projects-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px 20px;
+  margin-bottom: 42px;
+}
+
+.projects-gallery img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Testimonial section */
+
+.slide-container {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.slide-container .content {
+  padding: 8px 24px;
+}
+
+.testimonial .name {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 8px 24px;
+  display: inline-block;
+  margin-left: 16px;
+}
+
+.testimonials-container {
+  position: relative;
+}
+
+.slider-prev,
+.slider-next {
+  position: absolute;
+  top: 68px;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.06));
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-next {
+  right: -30px;
+}
+
+.testimonials-section {
+  background-color: var(--light-color);
+  margin-top: 100px;
+}
+
+.content p {
+  color: var(--dark-color);
+}
+
+.testimonials-section .wrapper h2{
+  color: var(--dark-color)
 }

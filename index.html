@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="glider.min.css">
   </head>
   
   <body>
@@ -91,15 +92,120 @@
 
       <!--Ends of brand section-->
 
+      <section class="about">
+        <h2>About Us</h2>
+        <div class="section-content">
+          <div class = "about-desc">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut tristique et egestas quis ipsum. Arcu ac tortor dignissim convallis aenean et tortor.</p>
+            <p>Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Ullamcorper morbi tincidunt ornare massa eget. Duis ultricies lacus sed turpis tincidunt id aliquet risus.</p>
+          </div>
+          <img src = "assets/Ellipse 2.png">
+        </div>
+      </section>
+
+      <!--End of About Us section-->
+
+      <section class = "projects">
+        <h2>Our Projects</h2>
+
+        <div class="projects-gallery">
+          <img src = "assets/project.png">
+          <img src = "assets/project.png">
+          <img src = "assets/project.png">
+          <img src = "assets/project.png">
+          <img src = "assets/project.png">
+          <img src = "assets/project.png">
+        </div>
+
+        <a href="#" class = "btn light-color">
+          View all
+        </a>
+
+      </section>
+
+      <!--End of the projects section-->
+
     </div>
 
+    <section class = "testimonials-section">
+      <div class="wrapper">
+        <h2>Testimonials</h2>
+
+        <div class="testimonials-container">
+          <div class="testimonials">
+            <div class="testimonial">
+              <div class="slide-container">
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut tristique et egestas quis ipsum. Arcu ac tortor dignissim convallis aenean et tortor.</p>
+                  <div class="name"><strong>Darlene,</strong> Google</div>
+
+                </div>
+
+                <img src = "assets/Rectangle 22.png">
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <div class="slide-container">
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut tristique et egestas quis ipsum. Arcu ac tortor dignissim convallis aenean et tortor.</p>
+                  <div class="name"><strong>Darlene,</strong> Google</div>
+
+                </div>
+
+                <img src = "assets/Rectangle 23.png">
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <div class="slide-container">
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut tristique et egestas quis ipsum. Arcu ac tortor dignissim convallis aenean et tortor.</p>
+                  <div class="name"><strong>Peter,</strong>Microsoft</div>
+
+                </div>
+
+                <img src = "assets/Rectangle 22.png">
+              </div>
+            </div>
+          </div>
 
 
 
+          <span class="slider-prev">
+            <img src = "assets/arrow-left.svg">
+          </span>
 
+          <span class="slider-next">
+            <img src = "assets/arrow-right.svg">
+          </span>
 
+          <div role = "tablist" class="dots-container">
+            <div class="dots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!--End of testimonial section-->
     
+
+
+    <script src = "glider.min.js"></script>
+
+    <script>
+
+      new Glider(document.querySelector(".testimonials"), {
+        slidesToShow: 1,
+        dots: '.dots',
+        arrows: {
+          prev: '.slider-prev',
+          next: '.slider-next'
+        },
+      });
+
+
+    </script>
 
     <script src = "main.js"></script>
   </body>
