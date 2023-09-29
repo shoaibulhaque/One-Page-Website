@@ -26,19 +26,19 @@
 
         <ul class="menu-items">
           <li>
-            <a href="#" class = "active">About</a>
+            <a href="#about" class = "active">About</a>
           </li>
 
           <li>
-            <a href="#">Our Projects</a>
+            <a href="#ourprojects">Our Projects</a>
           </li>
 
           <li>
-            <a href="#">Testimonials</a>
+            <a href="#testimonials">Testimonials</a>
           </li>
 
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
 
           <li>
@@ -92,7 +92,7 @@
 
       <!--Ends of brand section-->
 
-      <section class="about">
+      <section id = "about" class="about">
         <h2>About Us</h2>
         <div class="section-content">
           <div class = "about-desc">
@@ -105,7 +105,7 @@
 
       <!--End of About Us section-->
 
-      <section class = "projects">
+      <section id = "ourprojects" class = "projects">
         <h2>Our Projects</h2>
 
         <div class="projects-gallery">
@@ -127,7 +127,7 @@
 
     </div>
 
-    <section class = "testimonials-section">
+    <section id = "testimonials" class = "testimonials-section">
       <div class="wrapper">
         <h2>Testimonials</h2>
 
@@ -188,7 +188,89 @@
     </section>
 
     <!--End of testimonial section-->
-    
+
+    <div class="wrapper">
+      <section id = "contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form action = "#">
+          <div class="group">
+            <input type = "text" placeholder="Name">
+            <input type = "text" placeholder="Email">
+          </div>
+
+          <div class = "group">
+            <textarea name = "" id = "" col = "30" rows = "10" placeholder="your message"></textarea>
+          </div>
+
+          <a href="#" class = "btn light-color">Send Message</a>
+        </form>
+      </section>
+
+    </div>
+
+
+    <!--End of Contact section-->
+
+
+    <footer>
+      <div class = "wrapper">
+        <div class="footer-container">
+          <div class="logo">
+            <img src="assets/Infuzic..svg" alt="">
+          </div>
+
+          <div class="footer-nav">
+            <h3>Our Services</h3>
+            <ul>
+              <li><a href="#">Mobile Development</a></li>
+              <li><a href="#">Web App Development</a></li>
+              <li><a href="#">Theme Development</a></li>
+              <li><a href="#">SEO</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav">
+            <h3>About Us</h3>
+            <ul>
+              <li><a href="#">Infuzic Web Design</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav">
+            <h3>Get Social</h3>
+
+            <div class="footer-social">
+              <a href="#">
+                <img src="assets/Facebook Icon.png" alt="" />
+              </a>
+
+              <a href="#">
+                <img src= "assets/Instagram Icon.png" alt="" />
+              </a>
+
+              <a href="#">
+                <img src= "assets/Twitter Icon.png" alt="" />
+              </a>
+            </div>
+
+            <p>infuzic.tech@gmail.com</p>
+          </div>
+        </div>
+
+
+      </div>
+        
+
+      <p class="copyright">
+        This website was designed by Shoaib. &copy; 2023
+      </p>
+    </footer>
+
+
+    <!--End of the footer section-->
 
 
     <script src = "glider.min.js"></script>
@@ -197,7 +279,7 @@
 
       new Glider(document.querySelector(".testimonials"), {
         slidesToShow: 1,
-        dots: '.dots',
+        dots: ".dots",
         arrows: {
           prev: '.slider-prev',
           next: '.slider-next'
