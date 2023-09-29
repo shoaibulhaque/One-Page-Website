@@ -274,6 +274,19 @@ a.btn.light-color {
   align-items: center;
 }
 
+.brands-section .brands-line1 {
+  display: flex;
+  justify-content: space-around;
+  flex: 2;
+}
+
+.brands-section .brands-line2 {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+
 .brands-section h2,
 section h2 {
   font-size: 32px;
@@ -470,6 +483,10 @@ footer a:hover {
   text-align: center;
 }
 
+.desktop-nav .menu-icon,
+.mobile-nav {
+  display: none;
+}
 
 /* Media queries */
 
@@ -490,5 +507,256 @@ footer a:hover {
   .desktop-nav {
     width: calc(100% - 16px);
     margin-left: 8px;
+    padding: 4px 30px;
+  }
+
+  .desktop-nav .logo img {
+    height: 25px;
+  }
+
+  .desktop-nav .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hero-container .left p {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .hero-container .left h1 {
+    font-size: 30px;
+  }
+
+  .hero-container .left {
+    padding-left: 50px;
+  }
+
+  a.btn {
+    font-size: 16px;
+  }
+
+  /* Mobile brands section */
+
+  .brands-section {
+    margin-top: 0;
+    border-radius: 0;
+    padding: 32px 0;
+  }
+
+  .brands-section h2, 
+  section h2 {
+    font-size: 24px;
+  }
+
+  .brands-section h2::after,
+  section h2::after {
+    top: 100%;
+    width: 40px;
+    transform: translateX(-40px)
+  }
+
+  .brands-section .brands-container{
+    flex-direction: column;
+  }
+
+  .brands-section .brands-container img {
+    height: 24px;
+  }
+
+  .brands-section .brands-line1{
+    padding-bottom: 25px;
+  }
+
+  .brands-section .brands-line1{
+    width: 100%;
+  }
+
+  .brands-section .brands-line2{
+    width: 60%;
+  }
+
+  /*  Mobile About Section */
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px;
+  }
+
+  .section-content img {
+    margin-top: 50px;
+    padding-right: 100px;
+  }
+
+  .hero-container .BG-shape {
+    bottom: 0px;
+  }
+
+  /* Our projects mobile section */
+
+  .projects-gallery {
+    grid-template-columns: 1fr;
+    margin: 40px 30px;
+  }
+
+  .projects a {
+    margin: 42px 30px;
+  }
+
+  /* Testimonials mobile */
+
+  .testimonial {
+    text-align: center;
+  }
+
+  .testimonial .slide-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding: 16px 0;
+  }
+
+  .testimonial .slide-container img {
+    width: 150px;
+    margin: 0 auto;
+    order: -1;
+    margin-bottom: 20px;
+    border-radius: 50%;
+  }
+
+  .testimonial .slide-container p {
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: bold;
+  }
+
+  /* Contact section */
+  .contact-section {
+    text-align: center;
+  }
+
+  .contact-section .group {
+    flex-direction: column;
+  }
+
+  .contact-section input[type = "text"]:first-child{
+    margin-right: 0;
+  }
+
+  .contact-section input[type = "text"]:last-child{
+    margin-left: 0;
+  }
+
+  .contact-section input[type = "text"]{
+    margin-bottom: 15px;
+  }
+
+  .contact-section {
+    margin: 0 20px;
+  }
+
+  .contact-section .btn{
+    display: inline-block;
+  }
+
+  
+
+  /* Footer  */
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-container .logo {
+    order: 1;
+  }
+
+  .footer-container .footer-nav {
+    margin: 20px 0;
+  }
+
+  .polygon-container {
+    display: block;
+  }
+
+  .polygon-container .polygon-3 {
+    display: none;
+  }
+
+  .polygon-1{
+    position: absolute;
+    top: 200px;
+    right: 320px;
+  }
+
+  .polygon-2 {
+    position: absolute;
+    top: 300px;
+    right: 120px
+  }
+
+  /* Animation for mobile polygon */
+
+  @keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }
+
+.polygon-1, 
+.polygon-2 {
+  transition: transform 3s ease-in-out;
+  animation: rotate 100ms linear;
+  animation-delay: 0.5s;
+}
+
+
+/* Mobile Nav */
+
+.mobile-nav {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  position: fixed;
+  justify-content: center;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background-color: var(--dark-color);
+  right: 0;
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+  top: -100%;
+  transition: 400ms;
+}
+
+.mobile-nav.active {
+  opacity: 1;
+  pointer-events: auto;
+  top: 0;
+}
+
+.mobile-nav .menu-items {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-nav .menu-items li {
+  margin: 20px 0;
+}
+
+.mobile-nav .menu-items li a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+}
+
